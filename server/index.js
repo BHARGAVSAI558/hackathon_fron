@@ -1,11 +1,12 @@
-import React from 'react'
+const express = require('express');
+const app = express();
+const PORT = 5000;
 
-const index = () => {
-  return (
-    <div>
-      Index
-    </div>
-  )
-}
+app.get('/', (req, res) => {
+  res.send('Welcome to K L World!');
+});
 
-export default index
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
+
