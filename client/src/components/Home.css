@@ -1,0 +1,146 @@
+ 
+
+/* Main container for the homepage */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #80deea);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Description text */
+.home-description {
+  color: #00695c;
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin-bottom: 40px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.home-description:hover {
+  font-size: 1.6rem;
+  color: #00796b;
+}
+
+/* Logo container with circular styling */
+.home-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image fits inside the circle */
+  border: 2px solid #00695c; /* Optional border */
+  background-color: white; /* Optional background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
+
+/* Table styles for alignment and layout */
+.home-table {
+  border-collapse: collapse;
+}
+
+.home-table-cell {
+  border: none;
+  padding: 15px;
+}
+
+/* Image container for interactive effects */
+.image-container {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Soft background highlight */
+  transform: scale(0.95); /* Slight zoom-out effect */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* Shadow spread */
+}
+
+/* Image styling inside the container */
+.home-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Label text for the image */
+.image-label {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #004d40;
+  font-weight: bold;
+  display: block;
+  transition: color 0.3s ease-in-out;
+}
+
+.image-label:hover {
+  color: #00695c;
+}
+
+/* Media query for tablet screens */
+@media screen and (max-width: 768px) {
+  .home-container {
+    padding: 10px;
+    height: auto;
+  }
+
+  .home-description {
+    font-size: 1.2rem;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .home-logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+
+  .home-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .image-label {
+    font-size: 0.9rem;
+  }
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 480px) {
+  .home-description {
+    font-size: 1rem;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .home-logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    border-radius: 50%; /* Circular image */
+    border: 2px solid #00695c; /* Optional border */
+    background-color: white; /* Optional background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  }
+
+  .home-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .image-label {
+    font-size: 0.8rem;
+  }
+}

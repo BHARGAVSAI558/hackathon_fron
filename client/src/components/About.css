@@ -1,0 +1,46 @@
+.about-container {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #444; /* Darker gray for better readability */
+  }
+  
+  .about-title {
+    font-size: 2rem; /* Reduced font size */
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #171b02; /* A nice blue color */
+  }
+  
+  .about-text {
+    font-size: 0.9rem; /* Reduced font size */
+    line-height: 1.5;
+    margin-bottom: 12px;
+    color: #780808; /* Slightly lighter color for text */
+  }
+  
+  .about-footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9rem; /* Smaller footer text */
+    color: #f40b0b; /* Lighter gray for footer text */
+  }
+  
+  .about-footer a {
+    color: #0073e6; /* Blue color for links */
+    text-decoration: none;
+  }
+  
+  .about-footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  .about-logos {
+    margin-top: 10px;
+  }
+  
+  .about-logos img {
+    width: 70px;
+    height: 60px;
+  }
+  

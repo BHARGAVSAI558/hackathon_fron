@@ -1,0 +1,73 @@
+/* Footer Styling */
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: white;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    gap: 20px;
+    text-align: center;
+}
+
+/* Top Section: Logo and Navigation Links */
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo img {
+    height: 50px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: rgb(162, 21, 21);
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #94eac6;
+}
+
+/* Social Media Icons Section */
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.footer-icons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s, filter 0.2s;
+}
+
+.footer-icons img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Copyright Section */
+.footer-bottom {
+    background-color: #1f1f1f;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    text-align: center;
+}

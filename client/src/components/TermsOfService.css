@@ -1,0 +1,32 @@
+.terms-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .terms-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #444;
+  }
+  
+  .terms-content {
+    line-height: 1.6;
+    font-size: 18px;
+  }
+  
+  .terms-content h3 {
+    margin-top: 20px;
+    color: #555;
+  }
+  
+  .terms-content ul {
+    margin-left: 20px;
+  }
+  
+  .terms-content ul li {
+    margin-bottom: 10px;
+  }

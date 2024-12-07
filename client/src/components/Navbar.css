@@ -1,0 +1,176 @@
+ /* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff; /* Clean white background */
+    color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease;
+}
+
+/* Logo styling */
+.navbar-logo img {
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.navbar-logo img:hover {
+    transform: scale(1.1); /* Slight hover effect */
+}
+
+/* Desktop Menu */
+.navbar-menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar-menu button {
+    background: none;
+    color: rgb(16, 80, 158); /* Accent color */
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.navbar-menu button:hover {
+    background-color: #d1f7e2; /* Softer hover background */
+    color: #0d3c5d; /* Darker text on hover */
+    transform: scale(1.08); /* Subtle pop effect */
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.hamburger:hover div {
+    background-color: rgb(16, 80, 158);
+}
+
+/* User Avatar and Dropdown */
+.user-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.user-avatar:hover {
+    border-color: rgb(16, 80, 158);
+    transform: scale(1.1);
+}
+
+.user-dropdown {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    display: none;
+    z-index: 10;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.user-dropdown.show {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.user-dropdown-item {
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    color: #333;
+    font-size: 1rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.user-dropdown-item:hover {
+    background-color: rgb(16, 80, 158);
+    color: white;
+}
+
+/* Mobile-specific Styles */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        background-color: rgb(240, 248, 255);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 1rem;
+        z-index: 100;
+    }
+
+    .navbar-menu.show {
+        display: flex;
+    }
+
+    .navbar-menu button {
+        padding: 0.8rem;
+        width: 100%;
+        text-align: center;
+        font-size: 1.1rem;
+        background-color: transparent;
+        border: none;
+    }
+
+    .navbar-menu button:hover {
+        background-color: rgb(16, 80, 158);
+        color: white;
+    }
+
+    .user-avatar {
+        width: 35px;
+        height: 35px;
+    }
+}

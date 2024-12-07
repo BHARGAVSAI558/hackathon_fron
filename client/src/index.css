@@ -1,0 +1,22 @@
+@keyframes slideInOut {
+  0% {
+    transform: translateX(100%); /* Start off from the right */
+    opacity: 0;
+  }
+  25% {
+    transform: translateX(0); /* Move to the center */
+    opacity: 1;
+  }
+  75% {
+    transform: translateX(0); /* Stay in the center */
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left */
+    opacity: 0;
+  }
+}
+
+.sliding-image {
+  animation: slideInOut 6s ease-in-out forwards;
+}

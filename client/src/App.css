@@ -1,0 +1,310 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;  /* Light grey background for a modern look */
+  margin: 0;
+  padding: 0;
+  color: #333; /* Dark grey text for readability */
+}
+
+/* App Bar */
+.app-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #4A90E2; /* Modern blue */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.app-bar nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.app-bar nav ul li {
+  margin-left: 30px;
+}
+
+.app-bar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.app-bar nav ul li a:hover {
+  color: #f0f0f0; /* Slightly lighter hover effect */
+}
+
+/* Hero Section */
+.hero {
+  background-color: #673ab7; /* Bold purple for impact */
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Stronger shadow for hero section */
+  border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+/* Search Section */
+.search-section {
+  background-color: #f7f7f7; /* Very light grey for contrast */
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: -30px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-section h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.styled-select {
+  margin: 0 15px;
+  padding: 12px 18px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: box-shadow 0.3s ease;
+}
+
+.styled-select:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Highlighting the input field on hover */
+}
+
+.search-button {
+  padding: 12px 25px;
+  background-color: #4A90E2; /* Primary blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth animation */
+}
+
+.search-button:hover {
+  background-color: #357ABD; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Featured Properties */
+.featured-properties {
+  padding: 40px;
+  text-align: center;
+}
+
+.property-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Updated Property Card styling with hover zoom effect and red border */
+.property-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  position: relative;
+  overflow: hidden; /* Ensure image stays inside the card on zoom */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect */
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Slight elevation on hover */
+}
+
+.property-card img {
+  max-width: 100%;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease; /* Smooth zoom and border effect */
+}
+
+.property-card:hover img {
+  transform: scale(1.1); /* Zoom in effect on hover */
+  border: 3px solid red; /* Red border on hover */
+}
+
+.property-card h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.property-card p {
+  color: #666;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* Mobile Menu and Hamburger Styles */
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 2px 0;
+}
+
+.mobile-menu {
+  background-color: white;
+  position: absolute;
+  top: 60px; /* Adjust according to your header height */
+  right: 0;
+  width: 200px; /* Width of the menu */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background-color: #f0f0f0;
+}
+/* In app.css or index.css */
+.container {
+  display: flex;
+  flex-direction: column; /* Stacks children vertically */
+}
+
+.item {
+  flex: 1; /* Makes each item grow equally */
+}
+
+@media (min-width: 768px) {
+  .container {
+      flex-direction: row; /* Changes to horizontal layout on larger screens */
+  }
+}
+/* In app.css or index.css */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 column by default */
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
+  }
+}
+/* In app.css or index.css */
+.container {
+  width: 90%; /* Responsive width */
+  padding: 1rem; /* Responsive padding */
+}
+
+.button {
+  padding: 0.5rem 1rem; /* Responsive padding */
+}
+/* Base styles for mobile first */
+body {
+  font-size: 1rem; /* Base font size */
+}
+
+@media (min-width: 768px) {
+  body {
+      font-size: 1.125rem; /* Slightly larger font size for tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+      font-size: 1.25rem; /* Even larger font size for desktops */
+  }
+}
+/* In app.css or index.css */
+img {
+  max-width: 100%; /* Ensures the image scales down to fit its container */
+  height: auto; /* Maintains aspect ratio */
+}
+/* In app.css or index.css */
+.header {
+  height: 10vh; /* 10% of the viewport height */
+}
+
+.button {
+  font-size: 2vw; /* Font size relative to the viewport width */
+}
+/* styles.css */
+.announcement-container {
+  overflow: hidden;  
+  background-color: #f8e1e1;  
+  position: relative;  
+  height: 40px;  
+}
+
+.announcement {
+  white-space: nowrap; /* Prevent line breaks */
+  position: absolute; /* Position absolutely within the container */
+  font-size: 1.2rem; /* Font size */
+  padding: 10px 20px; /* Padding for better appearance */
+  animation: scroll 10s linear infinite; /* Animate the announcement */
+}
+
+/* Keyframes for the scrolling animation */
+@keyframes scroll {
+  0% {
+      transform: translateX(100%); 
+  }
+  100% {
+      transform: translateX(-100%);  
+  }
+}
+
