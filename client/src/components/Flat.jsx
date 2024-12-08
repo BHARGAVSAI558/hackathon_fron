@@ -559,7 +559,7 @@ const propertiesData = {
   ]
 
 }
-
+ 
 const Flat = () => {
   const [selectedLocation, setSelectedLocation] = useState('');
   const [properties, setProperties] = useState([]);
@@ -632,7 +632,7 @@ const Flat = () => {
                   style={{ width: '100%', height: 'auto', marginBottom: '10px' }}
                 />
                 <h3>{property.type} - {property.location}</h3>
-                <p>Price: ₹{property.price}</p>
+                <p>Price: ₹{property.rent}</p>
                 <button
                   onClick={() => handleToggleDetails(index)}
                   style={{ padding: '10px 10px', cursor: 'pointer' }}
